@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heart {
+    font-size: 60px;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    color: #e91e63;
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.poem {
+    margin: 25px 0;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #333;
+}
+
+.poem p {
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.poem p:nth-child(1) { animation-delay: 0.5s; }
+.poem p:nth-child(2) { animation-delay: 1s; }
+.poem p:nth-child(3) { animation-delay: 1.5s; }
+.poem p:nth-child(4) { animation-delay: 2s; }
+.poem p:nth-child(5) { animation-delay: 2.5s; }
+.poem p:nth-child(6) { animation-delay: 3s; }
+.poem p:nth-child(7) { animation-delay: 3.5s; }
+.poem p:nth-child(8) { animation-delay: 4s; }
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.signature {
+    margin: 25px 0;
+    font-style: italic;
+    color: #666;
+}
+
+.from {
+    font-weight: bold;
+    color: #e91e63;
+    margin-top: 10px;
+}
+
+button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #d81b60;
+}
+
+.surprise {
+    margin-top: 20px;
+    font-size: 24px;
+    min-height: 40px;
+                      }
